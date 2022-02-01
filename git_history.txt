@@ -1,0 +1,21 @@
+git init pink_salmon
+ss
+cd .\pink_salmon\
+ss
+vim test.txt
+ss
+git add .\test.txt
+git commit -m "first commit"
+vim test2.txt
+ss
+git add ./*
+git commit -m "second commit"
+git log
+git remote -v  # list remote repo to push to
+git remote add pink_salmon_ibm https://github.com/MarkRChristie/pink_salmon_ibm.git # repo created on github.coinm and url copied into command
+git remote -v
+git pull pink_salmon_ibm main --allow-unrelated-histories
+git pull pink_salmon_ibm main
+
+
+
